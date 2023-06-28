@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>网页标题</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+		}
+		
+		.header {
+			background-image: url("bj.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 300px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #000;
+			font-size: 32px;
+			font-weight: bold;
+			text-shadow: 2px 2px #fff;
+		}
+		
+		.content {
+			padding: 20px;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+		
+		.content div {
+			position: relative;
+			margin-bottom: 20px;
+		}
+		
+		.content div:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #eee;
+		}
+		
+		.content span {
+			margin-left: 10px;
+			font-weight: bold;
+		}
+		
+		.footer {
+			background-image: url("zlbz1.jpg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		道路指路标志
+	</div>
+	<div class="content">
+		<div>
+			线路编码：<span>国道G235</span>
+		</div>
+		<div>
+			支撑方式：<span>单悬臂式</span>
+		</div>
+		<div>
+			标志类型：<span>禁令标注-限速60km/h</span>
+		</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
